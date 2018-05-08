@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>广发证券</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .height50 {
+                height: 50px;
+            }
+            .main-warpper {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .header {
+                height: 30px;
+                background:#505050;
+            }
+            #top1{
+                position: absolute;
+                display: inline;
+                width: 30%;
+                height: 30px;
+            }
+            #top2{
+                position: absolute;
+                display: inline;
+                width: 30%;
+                height:30px;
+                margin-top: 6px;
+           }
+            .content {
+                flex: 1;
+                background: #383838;
+                display: flex;
+            }
+            
+            .flex1{
+                flex: 1;
+            
+            }
+            .flex2 {
+                flex: 2;
+            }
+            .flex3 {
+                flex: 3;
+                width: 100%;
+            }
+            .bg-#202020 {
+                background:#202020;
+            }
+            .bg-#181818 {
+                background:#181818;
+            }
+            .footer {
+                height: 30px;
+                background: #282828;
+            }
+            #text1{
+                color:white;
+            }
+            #text2{
+                color:red;
+            }
+           
+            ul{
+                margin: 20px;
+                padding:0px;
+                list-style: none;
+                float: left;
+            }
+            .flex1 ul li{
+                margin-top: 10px;
+            }
+            .flex3 ul li{
+                float: left;
+                margin-left: 10px;
+            }
+            .flex1 ul li a{
+                color:white;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .flex3 ul li a{
+                color:white;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .flex2 ul li{
+                height: 30px;
+                float: left;
+                margin-left: 100px;
+            }
+            .flex2 ul li a{
+                color:white;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .flex2 ul li ul li a{
+                color:white;
+               background: thistle;
+               line-height: 24px;
+                
+            }
+            a:hover{color: wheat}
+            .main-right{
+                width: 60%;
+                height:100%;
+                float:right;
+                margin-top:30px;
+            }
+
+        
+    </style>
+</head>
+<body>
+    <div class="main-warpper">
+        <div class="header">
+            <div id="text1">
+                <left><i class="fa fa-user-circle" aria-hidden="true"></i>登录/证券开户</left>
+                <input type="text" size="60" name="">
+            </div>
+            <div align="right">
+                    <input type="submit" name="submit" value="下载客户端">
+                    <input type="submit" name="submit" value="有问必答">
+                    <input type="submit" name="submit" value="客户反馈">
+            </div>
+        </div>
+        <div class="content">
+            <div class='flex1 bg-#181818'>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">行情</a></li>
+                            <li><a href="#">交易</a></li>
+                            <li><a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>资讯</a></li>
+                            <li><a href="#">龙虎榜</a></li>
+                            <li><a href="#">新股</a></li>
+                            <li><a href="#">组合</a></li>
+                            <li><a href="#">面板</a></li>
+                        </ul>
+                    </div>   
+            </div>
+            <div class="flex3">
+                <div class="memu">
+                    <ul>
+                        <li><a href="#">全部（3）</a></li>
+                        <li><a href="#">沪深（3）</a></li>
+                        <li><a href="#">港股（0）</a></li>
+                        <li><a href="#">最近浏览</a></li> 
+                    </ul>
+                    <div class="main-right">
+                    </div>
+                </div>
+            </div>
+            <div class='flex2 bg-#202020'>
+                <div class="right-top">
+                    <left> 
+                        <div id="text1">广发证券000776</div>
+                    </left><br>
+                </div>
+                    <div class="menu-mid">
+                        <ul>
+                            <div class="main-right">
+                                <img src="1.png" alt="1"></div><br>
+                            <div class="main-right">
+                                <img src="2.png" alt="2"></div>
+                            <li><a href="#"><strong>非银金融  1076.96  1.76%</strong></a></li>
+                                <ul>
+                                    <li><a href="#">名称</a></li>
+                                    <li><a href="#">代码</a></li>
+                                    <li><a href="#">现价</a></li>
+                                    <li><a href="#">涨幅</a></li>
+                                </ul>
+                            <li><a href="#"><strong>更多</strong></a></li>
+                                <ul>
+                                </ul>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        <div class="footer">
+            <div id="text1">上证指数3161.50 +24.85 +0.79% 1890亿   深证成指10707.80 +91.30 +0.77% 2548亿  创业板1856.87 +4.53 +0.24% 854.8亿
+        </div>
+</body>
+</html>
